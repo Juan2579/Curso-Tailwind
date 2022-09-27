@@ -5,10 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Tailwind</title>
+
 </head>
 <body>
-    <p>Hello world</p>
-    <div class="w-64 h-64 bg-primary"></div>
+    <header>
+        <nav></nav>
+    </header>
+    <div id="tab_bar"></div>
+    <main class="w-full h-auto">
+        <section id="home" class="w-full h-3/4 min-h-[500px] relative">
+            <div class="w-full h-12 flex flex-col items-center justify-center absolute">
+                <input type="text" placeholder="San Francisco">
+            </div>
+            <img class="w-full h-full" src="./img/sanFrancisco.jpg" alt="">
+        </section>
+        <section id="recomendadas"></section>
+        <section id="rentas_destacadas"></section>
+        <section id="recomendadas"></section>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
