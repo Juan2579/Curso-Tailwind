@@ -16,12 +16,13 @@
         <nav></nav>
     </header>
     <div id="tab_bar"></div>
-    <main class="w-full h-auto">
-        <section id="home" class="w-full h-3/4 min-h-[500px] relative">
-            <div class="w-full h-12 flex flex-col items-center justify-center absolute">
-                <input type="text" placeholder="San Francisco">
+    <main class="w-full h-screen">
+        <section id="home" class="w-full h-3/4 relative">
+            <div class="w-full h-full flex flex-col items-center justify-center space-y-96 py-6 absolute">
+                <input class="w-4/5 max-w-[430px] h-12  py-2 text-center rounded-3xl shadow-lg outline-none placeholder:font-normal placeholder:text-black text-black" type="text" placeholder="San Francisco">
+                <button class="w-1/2 max-w-[220px] h-12 py-2 rounded-3xl bg-white text-primary shadow-lg text-base text-center font-semibold">Explore More</button>
             </div>
-            <img class="w-full h-full" src="./img/sanFrancisco.jpg" alt="">
+            <img class="w-full h-full " src="./img/sanFrancisco.jpg" alt="">
         </section>
         <section id="recomendadas"></section>
         <section id="rentas_destacadas"></section>
