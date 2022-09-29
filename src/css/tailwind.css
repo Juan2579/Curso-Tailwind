@@ -4,7 +4,7 @@
 
 @layer components {
     .card{
-        @apply w-40 h-48 bg-secondary shadow-lg rounded-lg
+        @apply w-40 h-48 shadow-lg rounded-lg snap-center overflow-hidden shrink-0
     }
     .card_image{
         @apply w-full h-3/5 rounded-t-lg bg-cover
