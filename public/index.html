@@ -16,7 +16,7 @@
         <nav></nav>
     </header>
     <div id="tab_bar"></div>
-    <main class="w-full h-screen">
+    <main class="w-full h-auto">
         <section id="home" class="w-full h-2/3 relative">
             <div class="w-full h-full flex flex-col items-center justify-center space-y-96 py-6 absolute">
                 <input class="w-72 max-w-[430px] h-12 py-2 text-center rounded-3xl shadow-lg outline-none placeholder:font-normal placeholder:text-black text-black transition-all duration-300 focus-within:shadow-sm focus:ring-primary focus:ring-2 focus:w-11/12 focus:text-left focus:pl-4 focus:placeholder:text-left focus:placeholder:pl-4 " type="text" placeholder="San Francisco">
@@ -24,7 +24,7 @@
             </div>
             <img class="w-full h-full " src="./img/sanFrancisco.jpg" alt="">
         </section>
-        <section class="flex flex-col gap-6 py-5 px-4" id="recomendados">
+        <section class="flex flex-col gap-6 py-6 px-4" id="recomendados">
             <h2 class="pl-2 text-2xl text-primary font-semibold">Our Recommendations</h2>
             <div class="w-full h-52 flex items-center gap-5 snap-x overflow-x-auto overflow-y-hidden scrollbar-hide">
                 <article class="card bg-secondary">
@@ -64,12 +64,64 @@
                 </article>
             </div>
         </section>
-        <section id="rentas_destacadas"></section>
-        <section id="recomendadas"></section>
+        <section class="w-full h-full flex flex-col px-4" id="rentas_destacadas">
+            <h2 class="pl-2 pb-4 text-2xl text-primary font-semibold">Trending Stays</h2>
+            <div class="w-[95%] mx-auto h-full  flex flex-col gap-9">
+                <article class="w-full h-96 bg-chicago bg-cover bg-center rounded-xl text-white flex-none">
+                    <p class="text-2xl font-extrabold pt-10 pl-6">Chicago</p>
+                    <p class="text-base font-medium pl-6">2 rooms, bathroom and kitchen.</p>
+                </article>
+                <article class="w-full h-96 bg-LA bg-cover bg-center rounded-xl text-white flex-none">
+                    <p class="text-2xl font-extrabold pt-10 pl-6">Los Angeles</p>
+                    <p class="text-base font-medium pl-6">4 rooms, 3 bathrooms, kitchen and private pool.</p>
+                </article>
+                <article class="w-full h-96 bg-miami bg-cover bg-center rounded-xl text-white flex-none">
+                    <p class="text-2xl font-extrabold pt-10 pl-6">Miami</p>
+                    <p class="text-base font-medium pl-6">3 rooms, 2 bathrooms, kitchen and amazing sea view.</p>
+                </article>
+                <article class="w-full h-96 bg-bali bg-cover rounded-xl text-white flex-none">
+                    <p class="text-2xl font-extrabold pt-10 pl-6">Bali</p>
+                    <p class="text-base font-medium pl-6">2 rooms, 2 bathrooms, kitchen and private pool.</p>
+                </article>
+            </div>
+        </section>
+        <section class="w-full h-full px-3 py-10" id="faqs">
+            <h2 class="pl-2 pb-4 text-2xl text-primary font-extrabold">FAQS</h2>
+            <div class="w-full h-full p-2 flex flex-col gap-5">
+                <article class="w-full h-auto flex flex-col gap-2">
+                    <h3 class="text-base text-primary font-semibold">Payment Methods</h3>
+                    <p class="w-11/12 text-sm font-medium">We accept VISA, MasterCard, American Express, Paypal and Binance.</p>
+                </article>
+                <article class="w-full h-auto flex flex-col gap-2">
+                    <h3 class="text-base text-primary font-semibold">Cancellation Policy</h3>
+                    <p class="w-11/12 text-sm font-medium">For stays of less than a week, it is important to notify 3 days before advance, otherwise it will be sanctioned.</p>
+                </article>
+                <article class="w-full h-auto flex flex-col gap-2">
+                    <h3 class="text-base text-primary font-semibold">Long Stays </h3>
+                    <p class="w-11/12 text-sm font-medium">We have stays of up to 3 months, in this case an advance payment of 50% of the rental value is required.</p>
+                </article>
+                <article class="w-full h-auto flex flex-col gap-2">
+                    <h3 class="text-base text-primary font-semibold">Safety information </h3>
+                    <p class="w-11/12 text-sm font-medium">All our rooms have insurance in case of accidents.</p>
+                </article>
+                <article class="w-full h-auto flex flex-col gap-2">
+                    <h3 class="text-base text-primary font-semibold">Pets</h3>
+                    <p class="w-11/12 text-sm font-medium">The theme of pets will depend directly on the host.</p>
+                </article>
+            </div>
+        </section>
     </main>
-
-    <footer>
-
+    <footer class="w-full h-auto bg-gray-50 px-5 py-4 flex flex-col gap-4">
+        <h2 class="text-lg font-semibold text-gray-400">About Us</h2>
+        <ul class="flex flex-col gap-2">
+            <li class="font-medium text-sm text-gray-300">Investors</li>
+            <li class="font-medium text-sm text-gray-300">Jobs</li>
+            <li class="font-medium text-sm text-gray-300">Privacy policy</li>
+            <li class="font-medium text-sm text-gray-300">Terms and Conditions</li>
+            <li class="font-medium text-sm text-gray-300">Platzi Travel, inc</li>
+            <li class="font-medium text-sm text-gray-300">Follow Us</li>
+            <li class="flex gap-2 pt-1"><img src="./icons/twitter.svg" alt=""><img src="./icons/instagram.svg" alt=""></li>
+        </ul>
     </footer>
 </body>
 </html>
