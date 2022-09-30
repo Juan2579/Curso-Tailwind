@@ -514,6 +514,17 @@ video {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.card:hover {
+  --tw-translate-y: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .card_image {
@@ -569,28 +580,36 @@ video {
   height: 3rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-2\/5 {
   height: 40%;
+}
+
+.h-36 {
+  height: 9rem;
+}
+
+.h-60 {
+  height: 15rem;
+}
+
+.h-52 {
+  height: 13rem;
 }
 
 .w-full {
   width: 100%;
 }
 
-.w-4\/5 {
-  width: 80%;
+.w-72 {
+  width: 18rem;
 }
 
 .w-1\/2 {
   width: 50%;
-}
-
-.w-6\/12 {
-  width: 50%;
-}
-
-.w-3\/4 {
-  width: 75%;
 }
 
 .max-w-\[430px\] {
@@ -625,6 +644,18 @@ video {
   gap: 1.25rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .space-y-96 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(24rem * calc(1 - var(--tw-space-y-reverse)));
@@ -633,6 +664,10 @@ video {
 
 .overflow-x-auto {
   overflow-x: auto;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .rounded-3xl {
@@ -693,12 +728,12 @@ video {
   padding-left: 0.5rem;
 }
 
-.pl-4 {
-  padding-left: 1rem;
-}
-
 .text-center {
   text-align: center;
+}
+
+.font-Montserrat {
+  font-family: Montserrat, sans-serif;
 }
 
 .text-base {
@@ -752,28 +787,12 @@ video {
   transition-duration: 150ms;
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-500 {
-  transition-duration: 500ms;
-}
-
-.duration-700 {
-  transition-duration: 700ms;
-}
-
 .duration-300 {
   transition-duration: 300ms;
 }
 
-.duration-1000 {
-  transition-duration: 1000ms;
+.duration-700 {
+  transition-duration: 700ms;
 }
 
 .ease-in-out {
@@ -838,8 +857,17 @@ video {
   width: 91.666667%;
 }
 
-.focus\:text-start:focus {
-  text-align: start;
+.focus\:-translate-x-4:focus {
+  --tw-translate-x: -1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.focus\:pl-4:focus {
+  padding-left: 1rem;
+}
+
+.focus\:text-left:focus {
+  text-align: left;
 }
 
 .focus\:ring-2:focus {
@@ -848,12 +876,47 @@ video {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-.focus\:placeholder\:pl-2:focus::-moz-placeholder {
-  padding-left: 0.5rem;
+.focus\:ring-primary:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(204 45 74 / var(--tw-ring-opacity));
 }
 
-.focus\:placeholder\:pl-2:focus::placeholder {
-  padding-left: 0.5rem;
+.focus\:placeholder\:-translate-x-4:focus::-moz-placeholder {
+  --tw-translate-x: -1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.focus\:placeholder\:-translate-x-4:focus::placeholder {
+  --tw-translate-x: -1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.focus\:placeholder\:translate-x-8:focus::-moz-placeholder {
+  --tw-translate-x: 2rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.focus\:placeholder\:translate-x-8:focus::placeholder {
+  --tw-translate-x: 2rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.focus\:placeholder\:-translate-x-24:focus::-moz-placeholder {
+  --tw-translate-x: -6rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.focus\:placeholder\:-translate-x-24:focus::placeholder {
+  --tw-translate-x: -6rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.focus\:placeholder\:pl-3:focus::-moz-placeholder {
+  padding-left: 0.75rem;
+}
+
+.focus\:placeholder\:pl-3:focus::placeholder {
+  padding-left: 0.75rem;
 }
 
 .focus\:placeholder\:pl-4:focus::-moz-placeholder {
@@ -864,26 +927,10 @@ video {
   padding-left: 1rem;
 }
 
-.focus\:placeholder\:pl-10:focus::-moz-placeholder {
-  padding-left: 2.5rem;
+.focus\:placeholder\:text-left:focus::-moz-placeholder {
+  text-align: left;
 }
 
-.focus\:placeholder\:pl-10:focus::placeholder {
-  padding-left: 2.5rem;
-}
-
-.focus\:placeholder\:pl-5:focus::-moz-placeholder {
-  padding-left: 1.25rem;
-}
-
-.focus\:placeholder\:pl-5:focus::placeholder {
-  padding-left: 1.25rem;
-}
-
-.focus\:placeholder\:pl-3:focus::-moz-placeholder {
-  padding-left: 0.75rem;
-}
-
-.focus\:placeholder\:pl-3:focus::placeholder {
-  padding-left: 0.75rem;
+.focus\:placeholder\:text-left:focus::placeholder {
+  text-align: left;
 }
