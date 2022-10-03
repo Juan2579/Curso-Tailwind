@@ -4,15 +4,15 @@
 
 @layer components {
     .card{
-        @apply w-40 h-48 shadow-lg rounded-lg snap-center overflow-hidden shrink-0 transition-all duration-300 hover:-translate-y-2 hover:shadow-md
+        @apply w-40 h-48 shadow-lg rounded-lg snap-center overflow-hidden shrink-0 transition-all duration-300 hover:-translate-y-2 hover:shadow-md lg:w-64 lg:h-80
     }
     .card_image{
-        @apply w-full h-3/5 rounded-t-lg bg-cover
+        @apply w-full h-3/5 rounded-t-lg bg-cover bg-center
     }
     .card_title{
-        @apply pt-2 pb-1 px-2 font-bold  text-sm
+        @apply pt-2 pb-1 px-3 font-bold  text-sm lg:text-2xl lg:pt-4 dark:text-white
     }
     .card_description{
-        @apply px-2  font-normal text-[10px]
+        @apply px-3  font-normal text-[10px] lg:text-base lg:pt-2 dark:text-white
     }
 }
